@@ -1,0 +1,131 @@
+.sickfront {
+  .ui-draggable-dragging {
+    z-index: 99999;
+    background-color: #d3d3d3;
+  }
+
+
+  .desktop-layout {
+    width: 940+15*2px;
+  }
+
+  .tablet-layout {
+    width: 720+15*2px;
+  }
+
+  .mobile-layout {
+    width: 345+15*2px;
+
+    .stack-snappet .dropzone {
+      background-color: #f1acb1;
+    }
+  }
+
+  .sickfront-dropzone-layout {
+
+    .place {
+      background-color: #ccdceb;
+      text-transform: uppercase;
+      height: 100px;
+
+      &.place-height-x1 {
+        height: 275px;
+      }
+      &.place-height-x2 {
+        height: 2*275px;
+      }
+      &.place-height-x3 {
+        height: 3*275px;
+      }
+      &.place-height-x4 {
+        height: 4*275px;
+      }
+    }
+
+    .article-wrapper {
+      font-family: $titlinggothicfb-comp-font;
+      position: relative;
+
+      .loading {
+        opacity: .4;
+      }
+
+      article {
+        border: 1px solid #f1f1f1;
+        margin: -1px;
+      }
+
+      .close-button {
+        display: none;
+        background: url("../img/close.png") no-repeat top center;
+        width: 25px;
+        height:25px;
+        position: absolute;
+        top: 10px;
+        right: 5px;
+      }
+    }
+
+    .snappet-block {
+      .dropzone {
+        min-height: 172px;
+        height: 172px;
+        margin: 0 0 15px 0;
+      }
+    }
+
+    .article-big {
+      .dropzone {
+        height: 500px;
+      }
+    }
+
+    .dropzone {
+      border: 2px dotted #cdddeb;
+      height: 275px;
+      margin: 0 0 25px 0;
+      width: 100%;
+      background-color: #f8f8f8;
+
+      &.article-medium {
+        height: 644px;
+      }
+
+      .ui-draggable-dragging.on-drag-style {
+        max-width: 300px !important;
+
+      }
+
+      &.with-article {
+        height: auto;
+        background-color: transparent;
+        border: 0 none;
+
+        &.dropzone-selected {
+          background-color: #e2f1ff;
+        }
+      }
+    }
+
+    .article-regular .title {
+      font-size: 32px !important;
+    }
+
+
+    .ui-state-hover {
+      background-color: #ffff00;
+    }
+  }
+
+
+  .snappet-quick-add {
+    margin-bottom: 20px;
+    border: 2px dashed #ff7d7d;
+    padding: 10px;
+
+    .snappet-quick-add-form {
+      padding-top: 10px;
+    }
+  }
+}
+

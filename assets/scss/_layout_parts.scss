@@ -1,0 +1,228 @@
+.snappet-block {
+  .header, .footer {
+    position: relative;
+    text-align: center;
+    font-family: $titlinggothicfb-comp-font;
+    background: #e41f26;
+    text-transform: uppercase;
+    padding: 20px;
+    font-size: 30px;
+    line-height: 30px;
+
+    a {
+      &, &:hover, &:active {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-right: 7px solid transparent;
+      left: 50%;
+      margin-left: -7px;
+    }
+  }
+
+  .header:after {
+    border-bottom: 9px solid #fff;
+    bottom: 0;
+  }
+
+  .footer:after {
+    border-top: 9px solid #fff;
+    top: 0;
+  }
+
+  .content {
+    border: 1px dotted #464646;
+    border-width: 0 1px;
+    padding: 20px 10px;
+  }
+
+  article.snappet {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+
+    &:last-child {
+      border-bottom: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    h4 {
+      font-size: 24px;
+      line-height: 26px;
+      color: #e41f26;
+      margin: 0 0 5px;
+      letter-spacing: .03em;
+    }
+
+    .excerpt {
+      color: #282828;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: .03em;
+    }
+
+    a {
+      &, &:hover, &:active {
+        color: #e41f26;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+section {
+  h5 {
+    color: #000104;
+    font-family: $titlinggothicfb-comp-font;
+    font-size: 36px;
+    letter-spacing: 0.15px;
+    line-height: 38px;
+    border-bottom: 2px solid red;
+    display: inline-block;
+    margin: 0 0 30px;
+    padding: 0 2px;
+  }
+}
+
+section.most-read {
+  font-family: $default-font;
+  ul {
+    list-style-type: decimal;
+    padding: 0 25px;
+
+    li {
+      font-weight: bold;
+      padding: 0 0 25px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      span {
+        font-weight: normal;
+      }
+    }
+  }
+}
+
+section.stillinger {
+  margin-bottom: 80px;
+  a {
+    float: right;
+    margin-top: 15px;
+    font-family: $titlinggothicfb-comp-font;
+    font-size: 20px;
+    line-height: 22px;
+    &:after {
+      border-left: 13px dashed;
+      border-left: 13px solid\9;
+      border-bottom: 7px solid transparent;
+      border-top: 7px solid transparent;
+      color: $main-color-sysla;
+      content: '';
+      display: inline-block;
+      height: 0;
+      margin-left: 12px;
+      margin-top: -4px;
+      vertical-align: middle;
+      width: 0;
+    }
+
+    &, &:hover, &:active {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
+
+section.category-widget {
+  color: #000;
+  font-family: $titlinggothicfb-comp-font;
+  .header {
+    font-size: 36px;
+    letter-spacing: 0.15px;
+    line-height: 38px;
+    position: relative;
+    text-transform: uppercase;
+    span {
+      background-color: green;
+      display: inline-block;
+      height: 23px;
+      margin: 7px 0 0 10px;
+      position: absolute;
+      width: 100%;
+    }
+  }
+  .articles {
+    margin-top: 35px;
+    padding-left: 20px;
+    li {
+      font-size: 20px;
+      margin-bottom: 20px;
+      a {
+        color: #000;
+        font-family: $default-font;
+        font-size: 14px;
+        line-height: 30px;
+        text-decoration: none;
+      }
+    }
+  }
+  .see-all {
+    color: #7a7a7b;
+    float: right;
+    font-size: 22px;
+    letter-spacing: 0.15px;
+    line-height: 22px;
+    margin: 10px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:after {
+      border-left: 13px dashed;
+      border-left: 13px solid\9;
+      border-bottom: 7px solid transparent;
+      border-top: 7px solid transparent;
+      color: green;
+      content: '';
+      display: inline-block;
+      height: 0;
+      margin-left: 9px;
+      margin-top: -4px;
+      vertical-align: middle;
+      width: 0;
+    }
+  }
+}
+
+.advertisement {
+  margin-bottom: 30px;
+  text-align: center;
+  * {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+html .float-block {
+  font-family: $default-font;
+  @media(min-width: $screen-sm-min) {
+    margin-bottom: 70px;
+  }
+  @media(min-width: $screen-md-min) {
+    margin-bottom: 0;
+    position: absolute;
+  }
+}
+
+html .float-row {
+  position: relative;
+}

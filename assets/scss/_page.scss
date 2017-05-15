@@ -1,0 +1,107 @@
+body.folded #wpcontent,
+body.folded #wpfooter {
+  margin-left: 20px;
+}
+
+#wpwrap {
+  background-color: #EEEEEE;
+}
+
+
+.sickfront {
+  .sickfront-wrapper {
+    width: 1255px;
+    margin: 0 auto;
+    height: 300px;
+
+    .sickfront-wrapper-inner {
+      border: 1px solid #dcdcdc;
+      border-radius: 8px;
+      background-color: #FFFFFF;
+      margin-top: 7px;
+
+      .sidebar-column {
+        border-right: 1px solid #dcdcdc;
+        width: 260px;
+        padding: 0 15px;
+        float: left;
+        overflow-x: scroll;
+        height: 300px;
+
+        .sidebar {
+          padding-top: 15px;
+        }
+      }
+      .preview-column {
+        width: 985px;
+        overflow-x: scroll;
+        float: left;
+        position: relative;
+        height: 300px;
+
+        .sickfront-fixed-header-wrapper {          
+
+          .alert-block {
+            min-height: 30px;
+            background-color: #226666;
+            color: #FFF;
+            margin-bottom: 10px;
+            padding: 5px 0 5px 15px;
+            border-radius: 4px;
+
+            .pull-left {
+              text-align: center;
+              width: 900px;
+            }
+
+            .alert-close-button {
+              background: url("./../img/close_button.png") no-repeat;
+              height: 15px;
+              width: 15px;
+              margin-right: 14px;
+              margin-top: 3px;
+              cursor: pointer;
+            }
+          }
+
+          .sickfront-fixed-header {
+            position: absolute;
+            width: 100%;
+            padding: 15px 15px 0;
+            background-color: #FFFFFF;
+            z-index: 200;
+            top: 0;
+            left: 0;
+            right: 0;
+
+            .btn-group {
+              padding-right: 8px;
+            }
+            a {
+              box-shadow: none;
+              outline: 0;
+            }
+          }
+        }
+
+        .tab-content {
+          height: 100%;
+          overflow-y: scroll;
+          padding: 0 15px;
+          position: absolute;
+          width: 100%;
+          z-index: 100;
+        }
+
+        .sickfront-dropzone-layout {
+          padding-top: 65px;
+        }
+
+        .alert-block-shown .sickfront-dropzone-layout {
+          padding-top: 105px;
+        }
+      }
+
+    }
+  }
+}
